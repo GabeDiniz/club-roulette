@@ -24,19 +24,15 @@ module.exports = {
       // => @media (min-height: 800px) { ... }
     },
     extend: {
-      backgroundImage: {
-        blob: `url('/blob.png')`,
-      },
+      // backgroundImage: {
+      //   blob: `url('/blob.png')`,
+      // },
       colors: {
-        bgmain_blue: "#0e1017",
-        bground: "#282828",
-        bglight: "#3d3a3d",
-        cbase: "#2a1b3d",
-        lightbase: "#44318d",
-        highlight: "#d83f87",
-        neutral: "#8ea1a5",
-        hoverbg: "#ffffff",
-        gold: "#F4AB0A",
+        main: "#282c34",
+        accent: "#282828",
+        textcol: "",
+        primary: "#3d3a3d",
+        secondary: "#343434",
       },
     },
   },
