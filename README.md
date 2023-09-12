@@ -1,4 +1,4 @@
-# ⛳ Fullstack Portfolio Website
+# ⛳ Golf Club Roulette 
 This is a React Web App that allows Golfers 🏌️‍♂️ to spin a wheel of clubs! The premise of this app is to have some fun out on the golf course. You, the user/golfer, can edit the wheel of clubs to match what's in your set. Once you are happy with the options, you can spin it and whatever club it lands on, you have to use for your next shot! Good luck 😎
 
 This idea was inspired by GOOD GOOD and their Wheel of Not Ideal Golf game.  
