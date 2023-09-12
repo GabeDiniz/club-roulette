@@ -3,12 +3,15 @@ import "./App.css";
 
 // Components
 import Navbar from "./components/Navbar";
+import SpinningWheel from "./components/SpinningWheel";
 
 function App() {
+  const clubOptions = [1, 2, 3, 4];
+
   return (
     <div className="App">
       <Navbar />
-
+      <SpinningWheel options={clubOptions} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
