@@ -7,19 +7,20 @@ const SpinningWheel = ({ options }) => {
 
   const spinWheel = () => {
     // Calculate a random angle to rotate the wheel
-    const randomNumber = Math.floor(Math.random() * 10 + 10);
+    const randomNumber = Math.floor(Math.random() * options.length);
+    console.log(randomNumber);
     setSpinNumber(randomNumber);
 
-    // Calculate the selected option based on the angle
-    const numOptions = options.length;
-    const optionIndex = Math.floor((randomNumber % 360) / (360 / numOptions));
-    setSelectedOption(options[optionIndex]);
+    // const numOptions = options.length;
+    // const optionIndex = Math.floor((randomNumber % 360) / (360 / numOptions));
+    // const optionIndex = Math.floor(randomNumber);
+    setSelectedOption(options[randomNumber]);
   };
 
   return (
     <div className="bg-main h-screen text-white">
-      {/* The Wheel */}
-      <div className="wheel" style={{ transform: `rotateX(${spinNumber}deg)` }}>
+      {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
+      <div className="wheel">
         {options.map((option, index) => (
           <div key={index} className="wheel-option">
             {option}
