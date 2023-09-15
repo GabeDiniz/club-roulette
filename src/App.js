@@ -6,7 +6,19 @@ import Navbar from "./components/Navbar";
 import SpinningWheel from "./components/SpinningWheel";
 
 function App() {
-  const clubOptions = [1, 2, 3, 4];
+  const clubOptions = [
+    "Driver",
+    "3 Hybrid",
+    "9 iron",
+    "8 iron",
+    "7 iron",
+    "6 iron",
+    "5 iron",
+    "P Wedge",
+    "52",
+    "58",
+    "Putter",
+  ];
 
   return (
     <div className="App">
