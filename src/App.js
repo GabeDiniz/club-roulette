@@ -8,7 +8,9 @@ import SpinningWheel from "./components/SpinningWheel";
 function App() {
   const clubOptions = [
     "Driver",
-    "3 Hybrid",
+    "5 wood",
+    "3 wood",
+    "3 hybrid",
     "9 iron",
     "8 iron",
     "7 iron",
@@ -16,7 +18,7 @@ function App() {
     "5 iron",
     "P Wedge",
     "52",
-    "58",
+    "60",
     "Putter",
   ];
 
