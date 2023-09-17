@@ -21,9 +21,12 @@ const SpinningWheel = ({ options }) => {
     <div className="flex flex-col bg-main h-screen text-white">
       <h1 className="mt-4">Club Options:</h1>
       {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
-      <div className="flex flex-wrap border border-l-pink-500">
+      <div className="flex flex-wrap mx-2 mt-2">
         {options.map((option, index) => (
-          <div key={index} className="mx-2">
+          <div
+            key={index}
+            className=" bg-rose-600 border-rose-300 rounded-md border-2 px-2 py-1 mx-2 mb-2"
+          >
             {option}
           </div>
         ))}
