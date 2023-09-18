@@ -21,7 +21,7 @@ const SpinningWheel = ({ options }) => {
     <div className="flex flex-col bg-main h-screen text-white">
       <h1 className="mt-4">Club Options:</h1>
       {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
-      <div className="flex flex-wrap mx-2 mt-2">
+      <div className="flex flex-wrap justify-evenly mx-2 mt-2">
         {options.map((option, index) => (
           <div
             key={index}
@@ -33,7 +33,12 @@ const SpinningWheel = ({ options }) => {
       </div>
 
       {/* Button to spin the wheel */}
-      <button onClick={spinWheel}>Spin</button>
+      <button
+        className="bg-rose-600 border-rose-300 border-2 rounded-md mt-2 mx-auto px-4 py-1"
+        onClick={spinWheel}
+      >
+        Spin
+      </button>
 
       {/* Display the club */}
       {selectedOption && (
