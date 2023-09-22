@@ -17,9 +17,16 @@ const SpinningWheel = ({ options }) => {
     setSelectedOption(options[randomNumber]);
   };
 
+  // Add Club Functionality
+  const [newClub, setNewClub] = useState("");
+  const handleNewClubChange = (event) => {
+    setNewClub(event.target.value);
+  };
+
   const handleAddClub = (event) => {
     event.preventDefault();
-    console.log("testing");
+    console.log(newClub);
+
     return false;
   };
 
@@ -58,6 +65,7 @@ const SpinningWheel = ({ options }) => {
           id="newclub"
           name="newclub"
           placeholder="Add Club"
+          onChange={handleNewClubChange}
         />
         <button
           type="submit"
