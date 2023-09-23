@@ -25,7 +25,8 @@ const SpinningWheel = ({ options }) => {
 
   const handleAddClub = (event) => {
     event.preventDefault();
-    console.log(newClub);
+    options.push(newClub);
+    console.log(options);
 
     return false;
   };
