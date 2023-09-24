@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-const SpinningWheel = ({ options }) => {
+const SpinningWheel = ({ initialOptions }) => {
+  // State to manage the options array
+  const [options, setOptions] = useState(initialOptions);
+
   // State to track the selected option and rotation angle
   const [selectedOption, setSelectedOption] = useState(null);
   // const [spinNumber, setSpinNumber] = useState(0);
@@ -25,7 +28,9 @@ const SpinningWheel = ({ options }) => {
 
   const handleAddClub = (event) => {
     event.preventDefault();
-    options.push(newClub);
+    const updatedOptions = [...options, newClub];
+    setOptions(updatedOptions);
+    setNewClub("");
     console.log(options);
 
     return false;
@@ -67,11 +72,11 @@ const SpinningWheel = ({ options }) => {
           name="newclub"
           placeholder="Add Club"
           onChange={handleNewClubChange}
+          value={newClub}
         />
         <button
           type="submit"
           className="bg-rose-600 border border-white rounded-md mt-2 mx-auto px-8 py-2 hover:bg-rose-800"
-          // onClick={}
         >
           Add Club
         </button>
