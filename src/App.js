@@ -16,8 +16,8 @@ function App() {
     "6 iron",
     "5 iron",
     "P Wedge",
-    "52",
-    "60",
+    "G Wedge",
+    "C Wedge",
     "Putter",
   ];
 

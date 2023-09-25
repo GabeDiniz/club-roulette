@@ -47,7 +47,7 @@ const SpinningWheel = ({ initialOptions }) => {
             key={index}
             className="bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-3 relative"
           >
-            <div className="rounded-full bg-white absolute -left-2 -top-2 p-1">
+            <div className="rounded-full border-black border-[0.1rem] bg-white absolute -left-2 -top-2 p-1">
               <img className="w-2 h-2" src={del} alt="Delete" />
             </div>
             {option}
