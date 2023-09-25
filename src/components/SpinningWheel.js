@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import del from "./public/delete.png";
 
 const SpinningWheel = ({ initialOptions }) => {
   // State to manage the options array
@@ -44,12 +45,11 @@ const SpinningWheel = ({ initialOptions }) => {
         {options.map((option, index) => (
           <div
             key={index}
-            className=" bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-2"
+            className="bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-3 relative"
           >
-            <a
-              href="https://www.flaticon.com/free-icons/cancel"
-              title="cancel icons"
-            ></a>
+            <div className="rounded-full bg-white absolute -left-2 -top-2 p-1">
+              <img className="w-2 h-2" src={del} alt="Delete" />
+            </div>
             {option}
           </div>
         ))}
