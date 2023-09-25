@@ -46,6 +46,10 @@ const SpinningWheel = ({ initialOptions }) => {
             key={index}
             className=" bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-2"
           >
+            <a
+              href="https://www.flaticon.com/free-icons/cancel"
+              title="cancel icons"
+            ></a>
             {option}
           </div>
         ))}
