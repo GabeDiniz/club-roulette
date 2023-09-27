@@ -37,6 +37,13 @@ const SpinningWheel = ({ initialOptions }) => {
     return false;
   };
 
+  // Handle Delete Club
+  const handleDelete = (event) => {
+    const clickedDiv = event.currentTarget;
+    const optionToDelete = clickedDiv.getAttribute("data-option");
+    console.log(optionToDelete);
+  };
+
   return (
     <div className="flex flex-col bg-main h-screen text-white">
       <h1 className="my-4">Club Options:</h1>
@@ -47,7 +54,11 @@ const SpinningWheel = ({ initialOptions }) => {
             key={index}
             className="bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-3 relative"
           >
-            <div className="rounded-full border-black border-[0.1rem] bg-white absolute -left-2 -top-2 p-1">
+            <div
+              onClick={handleDelete}
+              className="rounded-full border-black border-[0.1rem] bg-white absolute -left-2 -top-2 p-1"
+              data-option={option}
+            >
               <img className="w-2 h-2" src={del} alt="Delete" />
             </div>
             {option}
