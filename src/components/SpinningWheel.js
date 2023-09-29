@@ -48,11 +48,11 @@ const SpinningWheel = ({ initialOptions }) => {
     <div className="flex flex-col bg-main h-screen text-white">
       <h1 className="my-4">Club Options:</h1>
       {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
-      <div className="flex flex-wrap mx-1">
+      <div className="flex flex-wrap mx-3">
         {options.map((option, index) => (
           <div
             key={index}
-            className="bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-3 relative"
+            className="relative bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-4"
           >
             <div
               onClick={handleDelete}
@@ -85,7 +85,7 @@ const SpinningWheel = ({ initialOptions }) => {
           type="text"
           id="newclub"
           name="newclub"
-          placeholder="Add Club"
+          placeholder="Enter club name here"
           onChange={handleNewClubChange}
           value={newClub}
         />
