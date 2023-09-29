@@ -6,6 +6,7 @@ import SpinningWheel from "./components/SpinningWheel";
 
 function App() {
   const clubOptions = [
+    "Any",
     "Driver",
     "5 wood",
     "3 wood",
