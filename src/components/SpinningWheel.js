@@ -42,6 +42,13 @@ const SpinningWheel = ({ initialOptions }) => {
     const clickedDiv = event.currentTarget;
     const optionToDelete = clickedDiv.getAttribute("data-option");
     console.log(optionToDelete);
+    var updatedOptions = [...options];
+    var index = updatedOptions.indexOf(optionToDelete);
+    console.log(index);
+    if (index !== -1) {
+      updatedOptions.splice(index, 1);
+      setOptions(updatedOptions);
+    }
   };
 
   return (
