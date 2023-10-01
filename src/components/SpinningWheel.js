@@ -32,7 +32,7 @@ const SpinningWheel = ({ initialOptions }) => {
     const updatedOptions = [...options, newClub];
     setOptions(updatedOptions);
     setNewClub("");
-    console.log(options);
+    // console.log(options);
 
     return false;
   };
@@ -41,10 +41,10 @@ const SpinningWheel = ({ initialOptions }) => {
   const handleDelete = (event) => {
     const clickedDiv = event.currentTarget;
     const optionToDelete = clickedDiv.getAttribute("data-option");
-    console.log(optionToDelete);
+    // console.log(optionToDelete);
     var updatedOptions = [...options];
     var index = updatedOptions.indexOf(optionToDelete);
-    console.log(index);
+    // console.log(index);
     if (index !== -1) {
       updatedOptions.splice(index, 1);
       setOptions(updatedOptions);
