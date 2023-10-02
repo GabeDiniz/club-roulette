@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* JSX content of the component */}
       <img className="w-full h-full object-cover" src={banner} alt="Banner" />
       <span className="absolute w-full h-14 bg-main opacity-50"></span>
-      <h1 className="absolute uppercase font-bold text-white">
+      <h1 className="absolute uppercase font-bold text-txt_main">
         ⛳ Welcome to Club Roulette
       </h1>
       {/* Add your HTML/JSX content here */}

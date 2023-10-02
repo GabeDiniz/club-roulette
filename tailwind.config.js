@@ -29,8 +29,8 @@ module.exports = {
       // },
       colors: {
         bg_main: "#0D1F2D",
-        bg_accent: "#1d2e3d",
-        bg_button: "#4a9d9c",
+        bg_accent: "#354656",
+        bg_button: "#0D6E6E",
         txt_main: "#FFFFFF",
         txt_accent: "#afffff",
         primary: "#3d3a3d",

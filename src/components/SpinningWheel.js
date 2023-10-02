@@ -52,18 +52,18 @@ const SpinningWheel = ({ initialOptions }) => {
   };
 
   return (
-    <div className="flex flex-col bg-bg_main h-screen text-white">
+    <div className="flex flex-col bg-bg_main h-screen text-txt_main">
       <h1 className="my-4">Club Options:</h1>
       {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
       <div className="flex flex-wrap mx-3">
         {options.map((option, index) => (
           <div
             key={index}
-            className="relative bg-rose-400 border-white rounded-md border-b-2 px-2 py-1 mx-2 mb-4"
+            className="relative bg-bg_accent border-white border-l-2 rounded-r-md px-2 py-1 mx-2 mb-4"
           >
             <div
               onClick={handleDelete}
-              className="rounded-full border-black border-[0.1rem] bg-white absolute -left-2 -top-2 p-1"
+              className="rounded-full bg-white absolute -left-2 -top-2 p-1"
               data-option={option}
             >
               <img className="w-2 h-2" src={del} alt="Delete" />
@@ -75,7 +75,7 @@ const SpinningWheel = ({ initialOptions }) => {
 
       {/* Button to spin the wheel */}
       <button
-        className="bg-rose-600 border border-white rounded-md mt-2 mx-auto px-8 py-2 hover:bg-rose-800"
+        className="bg-bg_button text-txt_accent rounded-md mt-2 mx-auto px-8 py-2"
         onClick={spinWheel}
       >
         Spin
@@ -98,7 +98,7 @@ const SpinningWheel = ({ initialOptions }) => {
         />
         <button
           type="submit"
-          className="bg-rose-600 border border-white rounded-md mt-2 mx-auto px-8 py-2 hover:bg-rose-800"
+          className="bg-bg_button text-txt_accent rounded-md mt-2 mx-auto px-8 py-2"
         >
           Add Club
         </button>
