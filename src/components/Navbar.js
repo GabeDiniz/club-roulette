@@ -3,7 +3,7 @@ import banner from "./public/golf-course.jpg";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center place-items-center h-24">
+    <div className="flex justify-center place-items-center h-24 border-b-2 border-b-white">
       {/* JSX content of the component */}
       <img className="w-full h-full object-cover" src={banner} alt="Banner" />
       <span className="absolute w-full h-14 bg-main opacity-50"></span>

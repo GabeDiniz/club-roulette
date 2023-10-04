@@ -63,7 +63,7 @@ const SpinningWheel = ({ initialOptions }) => {
           >
             <div
               onClick={handleDelete}
-              className="rounded-full bg-white absolute -left-2 -top-2 p-1"
+              className="rounded-full bg-white absolute -left-[0.55rem] -top-2 p-1"
               data-option={option}
             >
               <img className="w-2 h-2" src={del} alt="Delete" />
@@ -92,7 +92,7 @@ const SpinningWheel = ({ initialOptions }) => {
           type="text"
           id="newclub"
           name="newclub"
-          placeholder="Enter club name here"
+          placeholder="Enter additional clubs"
           onChange={handleNewClubChange}
           value={newClub}
         />
