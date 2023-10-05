@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import del from "./public/delete.png";
 
 const SpinningWheel = ({ initialOptions }) => {
@@ -51,6 +51,13 @@ const SpinningWheel = ({ initialOptions }) => {
     }
   };
 
+  useEffect(() => {
+    var htmlInput = document.getElementById("newclub");
+    htmlInput.oninvalid = function (e) {
+      e.target.setCustomValidity("Please Enter a Club");
+    };
+  });
+
   return (
     <div className="flex flex-col bg-bg_main h-screen text-txt_main">
       <h1 className="my-4">Club Options:</h1>
@@ -93,6 +100,7 @@ const SpinningWheel = ({ initialOptions }) => {
           id="newclub"
           name="newclub"
           placeholder="Enter additional clubs"
+          required
           onChange={handleNewClubChange}
           value={newClub}
         />
