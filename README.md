@@ -6,7 +6,7 @@ This idea was inspired by GOOD GOOD and their Wheel of Not Ideal Golf game.
 
 ## 🔗 Link to build below
 
-WIP
+![BUILD](https://iridescent-paletas-e93dcf.netlify.app/)
 
 # 💻 Tech Stack used for this Project:
 
