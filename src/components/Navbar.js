@@ -3,14 +3,13 @@ import banner from "./public/golf-course.jpg";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center place-items-center h-24 border-b-2 border-b-white">
+    <div className="flex justify-center place-items-center h-16 border-b-2 border-b-white bg-bg_main">
       {/* JSX content of the component */}
-      <img className="w-full h-full object-cover" src={banner} alt="Banner" />
-      <span className="absolute w-full h-14 bg-main opacity-50"></span>
-      <h1 className="absolute text-xl uppercase font-bold text-txt_main">
-        ⛳ Welcome to Club Roulette
+      {/* <img className="w-full h-full object-cover" src={banner} alt="Banner" /> */}
+      <span className="absolute w-full h-10 bg-main opacity-50"></span>
+      <h1 className="absolute text-xl font-bold text-txt_main">
+        ⛳ Golf Club Roulette
       </h1>
-      {/* Add your HTML/JSX content here */}
     </div>
   );
 };
