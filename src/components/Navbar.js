@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "./public/golf-course.jpg";
+// import banner from "./public/golf-course.jpg";
 
 const Navbar = () => {
   return (
