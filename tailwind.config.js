@@ -23,6 +23,9 @@ module.exports = {
       shorter: { raw: "(max-height: 690px)" },
       // => @media (min-height: 800px) { ... }
     },
+    fontFamily: {
+      lexend: ["lexend"],
+    },
     extend: {
       // backgroundImage: {
       //   blob: `url('/blob.png')`,
