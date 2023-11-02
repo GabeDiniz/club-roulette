@@ -1,5 +1,3 @@
-import "./App.css";
-
 // Components
 import Navbar from "./components/Navbar";
 import SpinningWheel from "./components/SpinningWheel";
