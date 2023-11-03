@@ -12,7 +12,7 @@ const SpinningWheel = ({ initialOptions }) => {
   const spinWheel = () => {
     // Calculate a random angle to rotate the wheel
     const randomNumber = Math.floor(Math.random() * options.length);
-    console.log(randomNumber);
+    // console.log(randomNumber);
     // setSpinNumber(randomNumber);
 
     // const numOptions = options.length;
@@ -60,7 +60,7 @@ const SpinningWheel = ({ initialOptions }) => {
 
   return (
     <div className="flex flex-col bg-bg_main h-screen text-txt_main">
-      <h1 className="my-4">Club Options:</h1>
+      <h1 className="my-4 self-center">Club Options:</h1>
       {/* The Wheel style={{ transform: `rotateX(${spinNumber}deg)` }}*/}
       <div className="flex flex-wrap mx-3 max-w-lg self-center">
         {options.map((option, index) => (
@@ -90,7 +90,9 @@ const SpinningWheel = ({ initialOptions }) => {
 
       {/* Display the club */}
       {selectedOption && (
-        <p className="font-bold text-lg mt-4">Club: {selectedOption}</p>
+        <p className="font-bold text-lg mt-4 self-center">
+          Club: {selectedOption}
+        </p>
       )}
       {/* <p>Debugging Random Number: {spinNumber}</p> */}
       <form className="flex flex-col" onSubmit={handleAddClub}>
