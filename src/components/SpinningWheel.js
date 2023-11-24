@@ -32,7 +32,6 @@ const SpinningWheel = ({ initialOptions }) => {
     const updatedOptions = [...options, newClub];
     setOptions(updatedOptions);
     setNewClub("");
-    // console.log(options);
 
     return false;
   };
@@ -41,10 +40,8 @@ const SpinningWheel = ({ initialOptions }) => {
   const handleDelete = (event) => {
     const clickedDiv = event.currentTarget;
     const optionToDelete = clickedDiv.getAttribute("data-option");
-    // console.log(optionToDelete);
     var updatedOptions = [...options];
     var index = updatedOptions.indexOf(optionToDelete);
-    // console.log(index);
     if (index !== -1) {
       updatedOptions.splice(index, 1);
       setOptions(updatedOptions);
@@ -87,7 +84,6 @@ const SpinningWheel = ({ initialOptions }) => {
           Club: {selectedOption}
         </p>
       )}
-      {/* <p>Debugging Random Number: {spinNumber}</p> */}
       <form className="flex flex-col" onSubmit={handleAddClub}>
         <input
           className="mt-8 h-8 mx-auto px-2 rounded-md border-2 border-white bg-black bg-opacity-40 focus:border-main"
